@@ -1,3 +1,7 @@
 - name: print sample role
   ansible.builtin.debug:
     msg: Hello from sample role
+
+- name: print role level variable
+  ansible.builtin.debug:
+    msg: url - {{ url }}
