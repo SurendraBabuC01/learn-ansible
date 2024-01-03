@@ -1,6 +1,6 @@
 - name: Demo on first play book
   hosts: all
   tasks:
-    - name: Print Hello Worldp
+    - name: Print Hello World
       ansible.builtin.debug:
         msg: "Hello World"
