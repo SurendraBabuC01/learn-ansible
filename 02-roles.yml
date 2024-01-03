@@ -1,4 +1,6 @@
 - name: Demo on role ansible
   hosts: all
+  vars:
+    url: play.example.com
   roles:
     - sample
