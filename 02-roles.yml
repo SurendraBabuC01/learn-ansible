@@ -1,0 +1,4 @@
+- name: Demo on role ansible
+  hosts: all
+  roles:
+    - sample
