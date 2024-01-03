@@ -38,3 +38,6 @@
     - name: run uptime shell command
       ansible.builtin.shell: uptime
       register: output
+    - name: print the shell output
+      ansible.builtin.debug:
+        msg: '{{ output }}'
