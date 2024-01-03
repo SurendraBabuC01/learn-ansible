@@ -5,11 +5,20 @@
       ansible.builtin.debug:
         msg: "Hello World"
 
-- name: Demo on vars
+- name: Demo on play level variables
   hosts: all
   vars:
     url: play.example.com
   tasks:
-    - name: Print Hello World
+    - name: Print play level variable
+      ansible.builtin.debug:
+        msg: URL - {{ url }}
+
+- name: Demo on task level vars
+  hosts: all
+  vars:
+    url: task.example.com
+  tasks:
+    - name: Print task level variable
       ansible.builtin.debug:
         msg: URL - {{ url }}
