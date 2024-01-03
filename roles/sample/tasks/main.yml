@@ -6,6 +6,6 @@
   ansible.builtin.debug:
     msg: url - {{ url }}
 
-- name: print role level variable
+- name: print role-play level variable
   ansible.builtin.debug:
     msg: url_play - {{ url_play }}

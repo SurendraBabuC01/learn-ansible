@@ -24,3 +24,10 @@
         msg: URL - {{ url }}
       vars:
         url: task.example.com
+
+- name: Demo on role level variable
+  hosts: all
+  vars:
+    url_play: url_play.example.com
+  roles:
+    - sample
